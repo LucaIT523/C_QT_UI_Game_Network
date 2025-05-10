@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameLauncher</class>
+ <widget class="QMainWindow" name="GameLauncher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1156</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+    <pointsize>11</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>GameLauncher</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/res/back.png);
+background-repeat: no-repeat;
+</string>
+   </property>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>550</y>
+      <width>101</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-image: url(:/res/ui2_btn_start_normal.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+    border-image: url(:/res/ui2_btn_start_wait.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:pressed {
+    border-image: url(:/res/ui2_btn_start_down.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:disabled {
+    border-image: url(:/res/ui2_btn_start_disable.png);
+    background-repeat: no-repeat;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>144</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-image: url(:/res/ui2_btn_mini_normal.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+    border-image: url(:/res/ui2_btn_mini_over.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:pressed {
+    border-image: url(:/res/ui2_btn_mini_down.png);
+    background-repeat: no-repeat;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>150</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-image: url(:/res/ui2_btn_close_normal.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:hover {
+    border-image: url(:/res/ui2_btn_close_over.png);
+    background-repeat: no-repeat;
+}
+
+QPushButton:pressed {
+    border-image: url(:/res/ui2_btn_close_down.png);
+    background-repeat: no-repeat;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>560</y>
+      <width>370</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 255);
+background-image: url(none);
+border-color: rgb(0, 255, 255);</string>
+    </property>
+    <property name="value">
+     <number>59</number>
+    </property>
+    <property name="format">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>400</y>
+      <width>450</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(null);</string>
+    </property>
+    <property name="title">
+     <string>Server</string>
+    </property>
+    <widget class="QPushButton" name="sv1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv5">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv6">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv8">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sv9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>100</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-image: url(:/res/btn-unselect.png);
+    background-repeat: no-repeat;
+}
+QPushButton:checked {
+    border-image: url(:/res/btn-selected.png);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="stateLabel">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>580</y>
+      <width>420</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-image: url(none);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextBrowserInteraction</set>
+    </property>
+   </widget>
+   <widget class="QAxWidget" name="ieWidget">
+    <property name="geometry" stdset="0">
+     <rect>
+      <x>480</x>
+      <y>180</y>
+      <width>450</width>
+      <height>210</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QAxWidget</class>
+   <extends>QWidget</extends>
+   <header>qaxwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>startButton</tabstop>
+  <tabstop>closeButton</tabstop>
+  <tabstop>minButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

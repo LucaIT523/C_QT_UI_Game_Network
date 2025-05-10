@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/back.png</file>
+        <file>res/GameLauncher.ico</file>
+        <file>res/min1.png</file>
+        <file>res/min2.png</file>
+        <file>res/min3.png</file>
+        <file>res/progressback.png</file>
+        <file>res/progressfront.png</file>
+        <file>res/ui2_btn_close_down.png</file>
+        <file>res/ui2_btn_close_normal.png</file>
+        <file>res/ui2_btn_close_over.png</file>
+        <file>res/ui2_btn_mini_down.png</file>
+        <file>res/ui2_btn_mini_normal.png</file>
+        <file>res/ui2_btn_mini_over.png</file>
+        <file>res/ui2_btn_start_disable.png</file>
+        <file>res/ui2_btn_start_down.png</file>
+        <file>res/ui2_btn_start_normal.png</file>
+        <file>res/ui2_btn_start_wait.png</file>
+        <file>res/btn-selected.png</file>
+        <file>res/btn-unselect.png</file>
+    </qresource>
+</RCC>
